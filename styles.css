@@ -3,76 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'godofwarfont';
+    src: url(font/GODOFWAR.TTF);
+}
 body {
-    position: relative;
-    background: url(god-of-war-cover.avif) no-repeat center;
-    background-size:cover;
+    background-image: url(img/wallpaper_god_of_war_2.jpg);
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto auto 1fr auto;
-}
-header {
-    backdrop-filter: blur(5px);
-    padding: 5px;
+    font-family: 'godofwarfont';
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-shadow: 2px 2PX 2PX black;
 }
 nav ul {
-    /* background-color: blue; */
     display: flex;
     justify-content: space-around;
 }
 nav li {
     width: 100%;
     list-style: none;
-    padding: 3px;
+    padding: 5px;
     border-radius: 20px;
     text-align: center;
     color: red;
-    transition: 1s, ease-in-out 0.5s;
+    transition: 1s, ease-in-out 1s;
 }
 nav li:hover{
     color: aliceblue;
-    /* background-color: black; */
+    backdrop-filter: blur(15px);
+    cursor: default;
 } 
-nav a{
-    color: blue;
-}
 main {
-    /* background-color: blueviolet; */
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 main section {
-    /* background-color: azure; */
     margin: 30px;
-    border-radius: 0px 0px 0px 30px;
-    /* box-shadow: ; */
+    border-radius: 30px;
 }
-
 article {
-    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
 article section {
-    /* background-color: aliceblue; */
     margin: 30px;
 }
 footer {
-    /* background-color: blanchedalmond; */
     height: 10rem;
     display: grid;
-    grid-template-columns: auto auto auto;    
+    grid-template-rows: 1fr auto ;    
 }
 footer section {
-    /* background-color: blueviolet; */
     margin: 5px;
 }
 h1{
     text-align: center;
     text-decoration: underline;
-    opacity: 1;
     text-shadow: 2px 2px 2px red;
+    transition: 1s, ease-in-out 1s;
 }
-header h2 {
-    text-align: left;
+h1:hover {
+    color: #db9720;
+    text-shadow: 3px 2PX 1PX black;
+}
+h3 {
+    text-align: center;
+}
+h2 {
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+p {
+    padding: 5px;
+}
+#copy {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 0;
+    text-align: center;
+    color: black;
+}
+.transparent {
+    backdrop-filter: blur(5px);
+    padding: 5px;
 }
