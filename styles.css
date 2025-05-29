@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background: url(god-of-war-cover.avif) no-repeat center;
+    background-size:cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}
+header {
+    backdrop-filter: blur(5px);
+    padding: 5px;
+}
+nav ul {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    width: 100%;
+    list-style: none;
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+    color: red;
+    transition: 1s, ease-in-out 0.5s;
+}
+nav li:hover{
+    color: aliceblue;
+    /* background-color: black; */
+} 
+nav a{
+    color: blue;
+}
+main {
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+main section {
+    /* background-color: azure; */
+    margin: 30px;
+    border-radius: 0px 0px 0px 30px;
+    /* box-shadow: ; */
+}
+
+article {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+article section {
+    /* background-color: aliceblue; */
+    margin: 30px;
+}
+footer {
+    /* background-color: blanchedalmond; */
+    height: 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto;    
+}
+footer section {
+    /* background-color: blueviolet; */
+    margin: 5px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    opacity: 1;
+    text-shadow: 2px 2px 2px red;
+}
+header h2 {
+    text-align: left;
+}
