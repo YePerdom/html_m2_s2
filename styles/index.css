@@ -5,10 +5,10 @@
 }
 @font-face {
     font-family: 'godofwarfont';
-    src: url(font/GODOFWAR.TTF);
+    src: url(/font/GODOFWAR.TTF);
 }
 body {
-    background-image: url(img/wallpaper_god_of_war_2.jpg);
+    background-image: url(/img/wallpaper_god_of_war_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,31 +25,39 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+main ul {
+    padding-left: 20px;
+}
 nav li {
     width: 100%;
     list-style: none;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
-    color: red;
     transition: 1s, ease-in-out 1s;
 }
 nav li:hover{
-    color: aliceblue;
     backdrop-filter: blur(15px);
-    cursor: default;
 } 
+nav a {
+    text-decoration: none;
+    color: red;
+    transition: 1s, ease-in-out 1s;
+}
+nav a:hover {
+    color: #fff;
+}
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-main article {
+main aside {
     display: flex;
     flex-direction: row-reverse;
     margin: 30px;
     border-radius: 30px;
 }
-main article figure {
+main aside figure {
     padding: 5px 0 5px 15px;
     text-align: center;
 }
@@ -57,15 +65,20 @@ main section {
     margin: 30px;
     border-radius: 30px;
 }
-article {
+/* aside {
     display: grid;
     grid-template-columns: 2fr 2fr;
-}
-article section {
+} */
+aside section {
     margin: 30px;
 }
-article section ul {
+aside section ul {
     display: flex;
+    justify-content: space-around;
+}
+aside section li {
+    list-style: none;
+    text-align: center;
 }
 footer {
     display: grid;
